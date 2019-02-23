@@ -1,8 +1,8 @@
 import java.util.Random;
 
 public class Vault {
-	Vault(){
-		secretCode= new Random().nextInt(1-000-000);
+	Vault(int k){
+		secretCode=  k;
 	}
 		int secretCode;
 		boolean tryCode( int guess ) {
